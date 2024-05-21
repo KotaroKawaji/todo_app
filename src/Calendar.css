@@ -1,0 +1,39 @@
+/* src/Calendar.css */
+.calendar {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-header {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day, .calendar-date {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: -1px;
+}
+
+.calendar-date.active {
+  cursor: pointer;
+}
+
+.calendar-date.active:hover {
+  background-color: #f0f0f0;
+}
+
+.calendar-date.selected {
+  background-color: rgb(124, 124, 124);
+  color: white;
+}
